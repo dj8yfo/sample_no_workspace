@@ -12,7 +12,7 @@ edition = "2021"
 crate-type = ["cdylib", "rlib"]
 
 [package.metadata.near.reproducible_build]
-image = "docker.io/sourcescan/cargo-near:0.6.0@sha256:bf488476d9c4e49e36862bbdef2c595f88d34a295fd551cc65dc291553849471"
+image = "docker.io/sourcescan/cargo-near:0.6.0-builder@sha256:d21001ebc889478deac105a07efbefcd667d6a2e927e8ea5f1526cd1877ae84a"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 [dependencies]
