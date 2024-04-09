@@ -6,14 +6,14 @@ edition = "2021"
 # TODO: Fill out the repository field to help NEAR ecosystem tools to discover your project.
 # NEP-0330 is automatically implemented for all contracts built with https://github.com/near/cargo-near.
 # Link to the repository will be available via `contract_source_metadata` view-function.
-#repository = "https://github.com/xxx/xxx"
+repository = "https://github.com/dj8yfo/sample_no_workspace"
 
 [lib]
 crate-type = ["cdylib", "rlib"]
 
 [package.metadata.near.reproducible_build]
-image = "docker.io/sourcescan/cargo-near:0.6.0-builder"
-image_digest = "sha256:d21001ebc889478deac105a07efbefcd667d6a2e927e8ea5f1526cd1877ae84a"
+image = "dj8yfo/sourcescan:0.x.x-dev-cargo-near"
+image_digest = "sha256:dccb36ce662072377831d37a9b46fee4229a35a3f853db90b8a999b2a15bffb5"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 [dependencies]
