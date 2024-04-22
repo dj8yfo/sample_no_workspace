@@ -15,8 +15,9 @@ crate-type = ["cdylib", "rlib"]
 # => 
 # https://github.com/dj8yfo/cargo-near-image/tree/0.x.x-builer-local-cargo-near
 [package.metadata.near.reproducible_build]
-image = "dj8yfo/sourcescan:0.x.x-dev-cargo-near"
-image_digest = "sha256:734ef71351e08cbfb47afe8724d4cb55475ad426fc8f379403af629266046e85"
+image = "dj8yfo/sourcescan:0.x.x-dev-cargo-near-build-cmd"
+image_digest = "sha256:cec42db780e8e86052e121916c7e96cf1ce848e19241c94fa13021b1b3ed5b3a"
+build_command = "cargo near build --no-release --no-doc"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 [dependencies]
