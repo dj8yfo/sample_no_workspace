@@ -1,5 +1,5 @@
 [package]
-name = "contract"
+name = "donation-sample-single-package-no-workspace"
 description = "Donation Contract Example for NEAR Protocol"
 version = "0.1.0"
 edition = "2021"
@@ -16,7 +16,7 @@ crate-type = ["cdylib", "rlib"]
 # https://github.com/dj8yfo/cargo-near-image/tree/0.x.x-builer-local-cargo-near
 [package.metadata.near.reproducible_build]
 image = "dj8yfo/sourcescan:0.x.x-dev-cargo-near"
-image_digest = "sha256:e99bdec7ab3708d4ff41fcff77219542031cdbf8a722e68e6324ed23b140caa6"
+image_digest = "sha256:734ef71351e08cbfb47afe8724d4cb55475ad426fc8f379403af629266046e85"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 [dependencies]
