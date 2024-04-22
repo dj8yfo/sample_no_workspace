@@ -11,9 +11,12 @@ repository = "https://github.com/dj8yfo/sample_no_workspace"
 [lib]
 crate-type = ["cdylib", "rlib"]
 
+# template: https://github.com/SourceScan/cargo-near-image/tree/0.6.0-near
+# => 
+# https://github.com/dj8yfo/cargo-near-image/tree/0.x.x-builer-local-cargo-near
 [package.metadata.near.reproducible_build]
 image = "dj8yfo/sourcescan:0.x.x-dev-cargo-near"
-image_digest = "sha256:dccb36ce662072377831d37a9b46fee4229a35a3f853db90b8a999b2a15bffb5"
+image_digest = "sha256:e99bdec7ab3708d4ff41fcff77219542031cdbf8a722e68e6324ed23b140caa6"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 [dependencies]
