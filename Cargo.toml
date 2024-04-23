@@ -17,7 +17,7 @@ crate-type = ["cdylib", "rlib"]
 [package.metadata.near.reproducible_build]
 image = "dj8yfo/sourcescan:0.x.x-dev-cargo-near-build-cmd"
 image_digest = "sha256:d90a187e9f0095c15749fa0aaff047fb8d227366adc215fa9538f058548a0458"
-build_command = "cargo near build --no-release --no-doc"
+container_build_command = "cargo near build --no-release --no-doc"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 [dependencies]
