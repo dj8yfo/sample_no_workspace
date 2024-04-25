@@ -18,6 +18,7 @@ crate-type = ["cdylib", "rlib"]
 image = "dj8yfo/sourcescan:0.x.x-dev-cargo-near-build-cmd"
 image_digest = "sha256:5c2a8b6108856875e74c9de515eff686ab2ba0da1cd8c14c78e359b42371ce68"
 container_build_command = "cargo near build --no-release --no-doc"
+source_code_git_url = "https://github.com/dj8yfo/sample_no_workspace.git"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 [dependencies]
