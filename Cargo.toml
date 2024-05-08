@@ -10,6 +10,7 @@ repository = "https://github.com/dj8yfo/sample_no_workspace"
 
 [lib]
 crate-type = ["cdylib", "rlib"]
+# add comment for test
 
 # template: https://github.com/SourceScan/cargo-near-image/tree/0.6.0-near
 # => 
