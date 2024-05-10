@@ -18,7 +18,7 @@ crate-type = ["cdylib", "rlib"]
 [package.metadata.near.reproducible_build]
 image = "dj8yfo/sourcescan:0.x.x-dev-cargo-near-factory"
 image_digest = "sha256:46b339eb6baa492ad6f67928db3a31d48f4d073f92210d717e6de85457082057"
-container_build_command = "cargo near build --no-release --no-doc"
+container_build_command = "cargo near build --no-default-features --features near-sdk/expensive-debug"
 source_code_git_url = "https://github.com/dj8yfo/sample_no_workspace.git"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
