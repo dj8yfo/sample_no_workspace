@@ -15,3 +15,6 @@ create-dev-acc-no-docker:
 
 deploy-no-docker: create-dev-acc-no-docker
     cargo near deploy --no-docker {{contract_no_docker}} without-init-call network-config testnet sign-with-keychain send
+
+test-meta-no-docker:
+    near contract call-function as-read-only {{contract_no_docker}} contract_source_metadata json-args {} network-config testnet now
