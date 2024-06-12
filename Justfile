@@ -1,5 +1,5 @@
-contract := "sample-crate-4.testnet"
-contract_no_docker := "sample-crate-no-docker-4.testnet"
+contract := "sample-crate-5.testnet"
+contract_no_docker := "sample-crate-no-docker-5.testnet"
 
 create-dev-acc:
     near account create-account sponsor-by-faucet-service {{contract}} autogenerate-new-keypair save-to-keychain network-config testnet create
