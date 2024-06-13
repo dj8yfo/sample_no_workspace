@@ -1891,9 +1891,9 @@ dependencies = [
 
 [[package]]
 name = "memchr"
-version = "2.7.2"
+version = "2.7.3"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "6c8640c5d730cb13ebd907d8d04b52f55ac9a2eec55b440c8892f40d56c76c1d"
+checksum = "6d0d8b92cd8358e8d229c11df9358decae64d137c5be540952c5ca7b25aea768"
 
 [[package]]
 name = "memmap2"
@@ -2264,7 +2264,7 @@ dependencies = [
 [[package]]
 name = "near-sdk"
 version = "5.1.0"
-source = "git+https://github.com/dj8yfo/near-sdk-rs.git?branch=add_contract_metadata#8d0c65f9a908434b8c256c5e5ba50e5c64b77ad0"
+source = "git+https://github.com/dj8yfo/near-sdk-rs.git?branch=add_contract_metadata#fb84219c0555b9c7be237848b08ea2656f345099"
 dependencies = [
  "base64 0.21.7",
  "borsh 1.5.1",
@@ -2283,7 +2283,7 @@ dependencies = [
 [[package]]
 name = "near-sdk-macros"
 version = "5.1.0"
-source = "git+https://github.com/dj8yfo/near-sdk-rs.git?branch=add_contract_metadata#8d0c65f9a908434b8c256c5e5ba50e5c64b77ad0"
+source = "git+https://github.com/dj8yfo/near-sdk-rs.git?branch=add_contract_metadata#fb84219c0555b9c7be237848b08ea2656f345099"
 dependencies = [
  "Inflector",
  "darling",
@@ -2305,7 +2305,7 @@ checksum = "855fd5540e3b4ff6fedf12aba2db1ee4b371b36f465da1363a6d022b27cb43b8"
 [[package]]
 name = "near-sys"
 version = "0.2.1"
-source = "git+https://github.com/dj8yfo/near-sdk-rs.git?branch=add_contract_metadata#8d0c65f9a908434b8c256c5e5ba50e5c64b77ad0"
+source = "git+https://github.com/dj8yfo/near-sdk-rs.git?branch=add_contract_metadata#fb84219c0555b9c7be237848b08ea2656f345099"
 
 [[package]]
 name = "near-token"
