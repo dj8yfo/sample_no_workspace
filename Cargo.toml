@@ -17,7 +17,7 @@ crate-type = ["cdylib", "rlib"]
 # https://github.com/dj8yfo/cargo-near-image/tree/0.x.x-builer-local-cargo-near
 [package.metadata.near.reproducible_build]
 image = "dj8yfo/sourcescan:0.x.x-dev-cargo-near-finalization"
-image_digest = "sha256:080836a4b6ff3d86c81b2e60835148a6e6bdc3a6f904cea6b8e71133ae5895c3"
+image_digest = "sha256:3b408688d7ce16d90fb79d35da98fe163e7cac6db84441b5bdc2108d8d37d0ae"
 container_build_command = "cargo near build --no-default-features --features near-sdk/expensive-debug"
 source_code_git_url = "https://github.com/dj8yfo/sample_no_workspace.git"
 
