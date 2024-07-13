@@ -1,4 +1,4 @@
-contract := "sample-crate-22.testnet"
+contract := "sample-crate-23.testnet"
 default := ''
 
 create-dev-acc:
