@@ -2,7 +2,7 @@ contract := "sample-crate-40.testnet"
 default := ''
 
 create-dev-acc:
-    near account create-account sponsor-by-faucet-service {{contract}} autogenerate-new-keypair save-to-keychain network-config testnet create
+    near account create-account sponsor-by-faucet-service {{contract}} autogenerate-new-keypair save-to-keychain network-config testnet create || true
 
 # additional_args can most often be `--no-docker`
 deploy additional_args=default: create-dev-acc
