@@ -1,4 +1,4 @@
-contract := "sample-crate-38.testnet"
+contract := "sample-crate-39.testnet"
 default := ''
 
 create-dev-acc:
@@ -10,3 +10,6 @@ deploy additional_args=default: create-dev-acc
 
 test-meta:
     near contract call-function as-read-only {{contract}} contract_source_metadata json-args {} network-config testnet now
+
+download_abi:
+    near contract download-abi {{contract}} save-to-file {{contract}}.json network-config testnet now
