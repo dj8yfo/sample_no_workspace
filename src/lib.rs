@@ -41,6 +41,8 @@ impl Contract {
 
     // Public Method - get the current beneficiary
     pub fn get_beneficiary(&self) -> &AccountId {
+        near_sdk::log!("we've received env 1 during compile time : {} ", env!("KEY"));
+        near_sdk::log!("we've received env 2 during compile time : {} ", env!("GOOGLE_QUERY"));
         &self.beneficiary
     }
 
