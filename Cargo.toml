@@ -19,11 +19,6 @@ crate-type = ["cdylib", "rlib"]
 image = "dj8yfo/sourcescan:0.x.x-dev-git-main-pre-0.9.0"
 # tag after colon above serves only descriptive purpose; image is identified by digest
 image_digest = "sha256:379862f159fbc16cdbd52008e8786bea6869fe3708047a949b9720ff5350947c"
-# build command inside of docker container 
-# if docker image from default gallery is used https://hub.docker.com/r/sourcescan/cargo-near/tags,
-# the command may be any combination of flags of `cargo-near`,
-# supported by respective version of binary inside the container besides `--no-locked` flag
-container_build_command = ["cargo", "near", "build"]
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 [dependencies]
