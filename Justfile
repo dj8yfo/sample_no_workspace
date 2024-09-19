@@ -1,4 +1,4 @@
-contract := "sample-crate-86.testnet"
+contract := "sample-crate-87.testnet"
 default := ''
 additional_env := "--env 'GOOGLE_QUERY=https://www.google.com/search?q=google+translate&sca_esv=3c150c50f502bc5d' --env 'KEY=VALUE'"
 
