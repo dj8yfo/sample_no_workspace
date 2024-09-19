@@ -1,4 +1,4 @@
-contract := "sample-crate-85.testnet"
+contract := "sample-crate-86.testnet"
 default := ''
 additional_env := "--env 'GOOGLE_QUERY=https://www.google.com/search?q=google+translate&sca_esv=3c150c50f502bc5d' --env 'KEY=VALUE'"
 
@@ -26,3 +26,11 @@ _test_meta target:
 
 [group('test-nep330-meta')]
 test_meta: (_test_meta contract)
+
+
+[group('test')]
+_call_get_beneficiary target:
+    near contract call-function as-read-only {{ target }} get_beneficiary json-args {} network-config testnet now
+
+[group('test')]
+call_get_beneficiary: (_call_get_beneficiary contract)
