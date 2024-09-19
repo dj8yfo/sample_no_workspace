@@ -1,21 +1,18 @@
-contract := "sample-crate-87.testnet"
+contract := "sample-crate-89.testnet"
 default := ''
-additional_env := "--env 'GOOGLE_QUERY=https://www.google.com/search?q=google+translate&sca_esv=3c150c50f502bc5d' --env 'KEY=VALUE'"
+export GOOGLE_QUERY := 'https://www.google.com/search?q=google+translate&sca_esv=3c150c50f502bc5d'
+export KEY := 'VALUE'
 
 [group('tempalte-create-deploy')]
 _create_dev_acc target additional_args=default:
     near account create-account sponsor-by-faucet-service {{ target }} autogenerate-new-keypair save-to-keychain network-config testnet create || true
-    cargo near deploy {{additional_args}} {{ target }} without-init-call network-config testnet sign-with-keychain send
+    cargo near deploy {{ additional_args }} {{ target }} without-init-call network-config testnet sign-with-keychain send
 
 [group('deploy')]
 deploy_simple: (_create_dev_acc contract)
 
-[group('deploy')]
-deploy_with_env: (_create_dev_acc contract additional_env)
-
-
 _download_abi target:
-    near contract download-abi {{target}} save-to-file {{contract}}.json network-config testnet now
+    near contract download-abi {{ target }} save-to-file {{ contract }}.json network-config testnet now
 
 download_abi: (_download_abi contract)
 
@@ -23,10 +20,8 @@ download_abi: (_download_abi contract)
 _test_meta target:
     near contract call-function as-read-only {{ target }} contract_source_metadata json-args {} network-config testnet now
 
-
 [group('test-nep330-meta')]
 test_meta: (_test_meta contract)
-
 
 [group('test')]
 _call_get_beneficiary target:
