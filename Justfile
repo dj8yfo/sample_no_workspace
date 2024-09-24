@@ -1,4 +1,4 @@
-contract := "sample-crate-94.testnet"
+contract := "sample-crate-95.testnet"
 default := ''
 export GOOGLE_QUERY := 'https://www.google.com/search?q=google+translate&sca_esv=3c150c50f502bc5d'
 export KEY := 'VALUE'
