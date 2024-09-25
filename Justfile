@@ -1,4 +1,4 @@
-contract := "sample-crate-95.testnet"
+contract := "sample-crate-96.testnet"
 default := ''
 export GOOGLE_QUERY := 'https://www.google.com/search?q=google+translate&sca_esv=3c150c50f502bc5d'
 export KEY := 'VALUE'
@@ -10,6 +10,9 @@ _create_dev_acc target additional_args=default:
 
 [group('deploy')]
 deploy_simple: (_create_dev_acc contract)
+
+[group('deploy')]
+deploy_no_docker: (_create_dev_acc contract "--no-docker")
 
 _download_abi target:
     near contract download-abi {{ target }} save-to-file {{ contract }}.json network-config testnet now
