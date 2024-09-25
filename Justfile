@@ -1,4 +1,4 @@
-contract := "sample-crate-96.testnet"
+contract := "sample-crate-97.testnet"
 default := ''
 export GOOGLE_QUERY := 'https://www.google.com/search?q=google+translate&sca_esv=3c150c50f502bc5d'
 export KEY := 'VALUE'
@@ -9,7 +9,7 @@ _create_dev_acc target additional_args=default:
     cargo near deploy {{ additional_args }} {{ target }} without-init-call network-config testnet sign-with-keychain send
 
 [group('deploy')]
-deploy_simple: (_create_dev_acc contract)
+deploy_docker: (_create_dev_acc contract)
 
 [group('deploy')]
 deploy_no_docker: (_create_dev_acc contract "--no-docker")
