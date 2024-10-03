@@ -16,9 +16,9 @@ crate-type = ["cdylib", "rlib"]
 # in https://github.com/near/NEPs/blob/master/neps/nep-0330.md 
 [package.metadata.near.reproducible_build]
 # image from cargo-near pull#198
-image = "dj8yfo/sourcescan:0.x.x-dev-pr-228"
+image = "sourcescan/cargo-near:0.9.0-rust-1.81.0"
 # tag after colon above serves only descriptive purpose; image is identified by digest
-image_digest = "sha256:188ce10f85c2e57ed4bab3c174104bfa11591eebb55dff1915b56fd0f1919682"
+image_digest = "sha256:a744c515253394f8d6fdbc1eca7dacb87d42c4eadbf4b747f7d5dea685e68a38"
 passed_env = ["KEY", "GOOGLE_QUERY"]
 # build command inside of docker container 
 # if docker image from default gallery is used https://hub.docker.com/r/sourcescan/cargo-near/tags,
