@@ -1,7 +1,8 @@
-contract := "sample-crate-102.testnet"
+contract := "sample-crate-104.testnet"
 default := ''
-export GOOGLE_QUERY := 'https://www.google.com/search?q=google+translate&sca_esv=3c150c50f502bc5d'
-export KEY := 'VALUE'
+# export GOOGLE_QUERY := 'https://www.google.com/search?q=google+translate&sca_esv=3c150c50f502bc5d'
+# export KEY := 'VALUE'
+export RUST_LOG := 'cargo_near=info'
 
 [group('tempalte-create-deploy')]
 _create_dev_acc target additional_args=default:
